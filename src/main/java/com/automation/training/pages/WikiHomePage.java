@@ -15,7 +15,7 @@ public class WikiHomePage extends BasePage{
 	@FindBy(id="searchInput")
 	private WebElement searchInput;
 	
-	@FindBy(xpath="//*[@id='search-form']/fieldset/button")
+	@FindBy(css="[id=search-input] ~ button")
 	private WebElement searchButton;
 	
 	public ArticlePage buscar(String busqueda) {

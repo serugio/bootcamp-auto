@@ -21,4 +21,5 @@ public abstract class BasePage {
 			driver.quit();
 		}
 	}
+
 }

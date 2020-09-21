@@ -15,6 +15,20 @@ public class ArticlePage extends BasePage{
 	
 	@FindBy(linkText="Privacy policy")
 	private WebElement privacyLink;
+
+	@FindBy(id="searchInput")
+	private WebElement searchInput;
+
+	@FindBy(id="searchButton")
+	private WebElement searchButton;
+
+	public ArticlePage buscar(String busqueda) {
+		searchInput.sendKeys(busqueda);
+		searchButton.click();
+		return new ArticlePage(getDriver());
+	}
+
+
 	
 	public String getPageTitle() {
 		return pageTitle.getText();
