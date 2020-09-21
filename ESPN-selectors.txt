@@ -1,0 +1,32 @@
+##################### SELECTORS FOR ESPN APP ########################
+
+
+CREATE ACCOUNT:
+
+main page (https://www.espn.com/?src=com)
+
+user_icon:  #global-user-trigger
+sign_up_button: #sideLogin-left-rail button.button.med
+user_icon_login_option: #global-header li.user li:nth-child(7) a
+user_icon_logout_option:    #global-header li.user li:nth-child(9) a
+user_icon_profile_option:   #global-header li.user li:nth-child(5) a
+
+
+sign up modal
+
+first_name_textInput:   [name="firstName"]
+last_name_textInput:    [name="lastName"]
+email_textInput:    [name="email"]
+signUpModal_password_textInput:    [name="newPassword"]
+sign_up_modal_button: [id="did-ui-view"] button
+
+login modal
+
+loginModal_userNameOrEmail_textInput:    [id="did-ui-view"] [type="email"]
+loginModal_password_textInput:    [id="did-ui-view"] [type="password"]
+loginModal_login_button:    [id="did-ui-view"] [type="submit"]
+
+profile modal
+
+profileModal_delete_account: #cancel-account
+profileModal_confirm_delete_account_button: [id="did-ui-view"] [type="submit"]
