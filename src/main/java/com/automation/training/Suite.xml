@@ -2,9 +2,11 @@
 
 <suite name="My test suite" verbose="1">
 	<parameter name="browser" value="chrome" />
-	<test name="My first test">
+	<test name="create account">
 		<classes>
-			<class name="com.automation.training.tests.WikiTests"></class>
+<!--			<class name="com.automation.training.tests.EspnCreateAccountTests"></class>-->
+<!--			<class name="com.automation.training.tests.EspnLogInTests"></class>-->
+			<class name="com.automation.training.tests.EspnDeleteAccountTests"></class>
 		</classes>
 	</test>
 </suite>
