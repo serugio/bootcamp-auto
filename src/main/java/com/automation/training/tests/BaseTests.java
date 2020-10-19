@@ -11,16 +11,16 @@ public class BaseTests {
 	
 	private BookingMainPage bookingMainPage;
 	
-	@BeforeClass(alwaysRun=true)
+	@BeforeMethod(alwaysRun=true)
 	@Parameters({"browser"})
 	public void beforeSuite(String browser) {
 		myDriver = new MyDriver(browser);
 		bookingMainPage = new BookingMainPage(myDriver.getDriver());
 	}
 	
-	@AfterClass(alwaysRun=true)
+	@AfterMethod(alwaysRun=true)
 	public void afterSuite() {
-//		bookingMainPage.dispose();
+		bookingMainPage.dispose();
 	}
 	public BookingMainPage getBookingMainPage() {
 		return bookingMainPage;

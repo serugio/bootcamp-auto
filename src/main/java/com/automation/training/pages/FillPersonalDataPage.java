@@ -44,7 +44,7 @@ public class FillPersonalDataPage extends BasePage {
 	//
 	//+++++++++++++++++++++++++++ ACTIONS +++++++++++++++++++++++++++
 
-	public void typePersonalData(String name, String lastName, String email){
+	public void typePersonalData(String name, String lastName, String email) throws InterruptedException {  Thread.sleep(3000);
 		//getFluentWait().until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class*='bp_hotel_details'], [class*='hotel-address']")));
 		scrollToElement(firstNameInput);
 		typeInTextInputElement(name, firstNameInput);

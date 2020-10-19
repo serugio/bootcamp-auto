@@ -6,9 +6,8 @@
 		<classes>
 			<class name="com.automation.training.tests.BookingTests">
 				<methods>
-					<exclude name="selectSearchResult"></exclude>
-					<exclude name="fiveStarsSearchResults"></exclude>
-					<exclude name="testHotelBookingData"></exclude>
+					<include name="fiveStarsSearchResults"></include>
+					<include name="testHotelBookingData"></include>
 					<include name="testFivePageValidations"></include>
 				</methods>
 			</class>
