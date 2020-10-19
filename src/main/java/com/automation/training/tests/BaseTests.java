@@ -1,6 +1,6 @@
 package com.automation.training.tests;
 
-import com.automation.training.pages.EspnMainPage;
+import com.automation.training.pages.BookingMainPage;
 import org.testng.annotations.*;
 
 import com.automation.training.MyDriver;
@@ -9,20 +9,20 @@ public class BaseTests {
 	
 	MyDriver myDriver;
 	
-	private EspnMainPage espnHome;
+	private BookingMainPage bookingMainPage;
 	
 	@BeforeClass(alwaysRun=true)
 	@Parameters({"browser"})
 	public void beforeSuite(String browser) {
 		myDriver = new MyDriver(browser);
-		espnHome = new EspnMainPage(myDriver.getDriver());
+		bookingMainPage = new BookingMainPage(myDriver.getDriver());
 	}
 	
 	@AfterClass(alwaysRun=true)
 	public void afterSuite() {
-//		espnHome.dispose();
+//		bookingMainPage.dispose();
 	}
-	public EspnMainPage getEspnMainPage() {
-		return espnHome;
+	public BookingMainPage getBookingMainPage() {
+		return bookingMainPage;
 	}
 }
