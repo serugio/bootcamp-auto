@@ -1,6 +1,6 @@
 package com.automation.training.tests;
 
-import com.automation.training.pages.BookingMainPage;
+import com.automation.training.pages.WoocommercePage;
 import org.testng.annotations.*;
 
 import com.automation.training.MyDriver;
@@ -9,20 +9,20 @@ public class BaseTests {
 	
 	MyDriver myDriver;
 	
-	private BookingMainPage bookingMainPage;
+	private WoocommercePage woocommercePage;
 	
 	@BeforeMethod(alwaysRun=true)
 	@Parameters({"browser"})
 	public void beforeSuite(String browser) {
 		myDriver = new MyDriver(browser);
-		bookingMainPage = new BookingMainPage(myDriver.getDriver());
+		woocommercePage = new WoocommercePage(myDriver.getDriver());
 	}
 	
 	@AfterMethod(alwaysRun=true)
 	public void afterSuite() {
-		bookingMainPage.dispose();
+//		woocommercePage.dispose();
 	}
-	public BookingMainPage getBookingMainPage() {
-		return bookingMainPage;
+	public WoocommercePage getBookingMainPage() {
+		return woocommercePage;
 	}
 }

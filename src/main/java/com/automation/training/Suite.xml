@@ -4,11 +4,10 @@
 	<parameter name="browser" value="chrome" />
 	<test name="booking test plan">
 		<classes>
-			<class name="com.automation.training.tests.BookingTests">
+			<class name="com.automation.training.tests.ShoppingCarTest">
 				<methods>
-					<include name="fiveStarsSearchResults"></include>
-					<include name="testHotelBookingData"></include>
-					<include name="testFivePageValidations"></include>
+					<include name="shoppingCartTest"></include>
+
 				</methods>
 			</class>
 		</classes>
